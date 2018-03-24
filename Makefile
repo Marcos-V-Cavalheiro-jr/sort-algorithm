@@ -1,2 +1,2 @@
 all:
-	g++ trabalison.cpp -o cal
+	g++ trabalison.cpp sort.cpp -o cal
