@@ -13,8 +13,9 @@ void bubble_sort(std::vector<int> values){
 	}
 	//std::cout << values[0] << ' ' << values[values.size()-1] << std::endl;
 }
-
-void insert_sort(std::vector<int> values){
+ 
+//ADD nos outros arquivos
+void select_sort(std::vector<int> values){
 	int i, j, x, aux;
 	for (i = 0; i < (int) values.size(); i++){
 		x = i;
@@ -26,6 +27,20 @@ void insert_sort(std::vector<int> values){
 		aux = values[i];
 		values[i] = values[x];
 		values[x] = aux;
+	}
+	//std::cout << values[0] << ' ' << values[values.size()-1] << std::endl;
+}
+
+void insert_sort(std::vector<int> values){
+	int i, j, x;
+	for (i = 1; i < (int) values.size(); i++){
+		x = values[i];
+		j = i-1;
+		while(j >= 0 && values[j] > x){
+			values[j+1] = values[j];
+			j--;
+		}
+		values[j+1] = x;
 	}
 	std::cout << values[0] << ' ' << values[values.size()-1] << std::endl;
 }
