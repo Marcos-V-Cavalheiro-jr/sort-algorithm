@@ -42,7 +42,7 @@ void insert_sort(std::vector<int> values){
 		}
 		values[j+1] = x;
 	}
-	std::cout << values[0] << ' ' << values[values.size()-1] << std::endl;
+	// std::cout << values[0] << ' ' << values[values.size()-1] << std::endl;
 }
 
 //Fazer um merge com var global lixo
@@ -159,7 +159,7 @@ void quick_sort_random(std::vector<int> values){
 	values_global = copy(values);
 	quick_sort_fixed_(inicio, fim);
 
-	std::cout << values_global[0] << ' ' << values_global[values_global.size()-1] << std::endl;
+	// std::cout << values_global[0] << ' ' << values_global[values_global.size()-1] << std::endl;
 
 }
 
@@ -193,15 +193,15 @@ int pivoteamento_random(int inicio, int fim){  //lomuto
 
 void heap_sort(std::vector<int> values){
 	
-	std::cout << " 6" << std::endl;
+	// std::cout << " 6" << std::endl;
 }
 
 void counting_sort(std::vector<int> values){
-	std::cout << " 7" << std::endl;
+	// std::cout << " 7" << std::endl;
 }
 
 void bucket_sort(std::vector<int> values){
-	std::cout << " 8" << std::endl;
+	// std::cout << " 8" << std::endl;
 }
 
 ////////////////////////////

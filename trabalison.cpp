@@ -81,42 +81,42 @@ int main(int argc, char const *argv[]){
 			std::vector<int> times;
 
 			gettimeofday(&start, NULL);
-			bubble_sort(values);
+			// bubble_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			insert_sort(values);
+			// insert_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			merge_sort(values);
+			// merge_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			quick_sort_fixed(values);
+			// quick_sort_fixed(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			quick_sort_random(values);
+			// quick_sort_random(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			heap_sort(values);
+			// heap_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			counting_sort(values);
+			// counting_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 
 			gettimeofday(&start, NULL);
-			bucket_sort(values);
+			// bucket_sort(values);
 			gettimeofday(&finish, NULL);
 			times.push_back(1 * (finish.tv_sec - start.tv_sec) + (finish.tv_usec - start.tv_usec) / 1000000.0);
 			print_vector(times);
